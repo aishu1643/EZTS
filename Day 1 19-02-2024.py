@@ -1,12 +1,12 @@
 #1 largest in 2
-"""a=int(input())
+a=int(input())
 b=int(input())
 if a>b:
     print(a)
 else:
-    print(b)"""
+    print(b)
 #2 largest in 3
-"""a=int(input())
+a=int(input())
 b=int(input())
 c=int(input())
 if a>b and a>c:
@@ -14,16 +14,16 @@ if a>b and a>c:
 elif b>c and b>a:
     print(b)
 else:
-    print(c)"""
+    print(c)
 #3 2nd largest in two
-"""a=int(input())
+a=int(input())
 b=int(input())
 if a>b:
     print(b)
 else:
-    print(a)"""
+    print(a)
 #4 2nd largest in 3
-"""a=int(input())
+a=int(input())
 b=int(input())
 c=int(input())
 if (a>b and a<c) or (a>c and a<b):
@@ -31,9 +31,9 @@ if (a>b and a<c) or (a>c and a<b):
 elif(b>a and b<c) or (b>c and b<a):
     print(b)
 else:
-    print(c)"""
+    print(c)
 #5
-"""a=int(input())
+a=int(input())
 b=int(input())
 c=int(input())
 if a>b and a>c:
@@ -47,34 +47,34 @@ if a>b and a>c:
 elif b>c and b>a:
     print(b)
 else:
-    print(c)"""
+    print(c)
 #6
-"""for i in range(1000):
-    print("Hello World")"""
+for i in range(1000):
+    print("Hello World")
 #
-"""print("Hello World\n"*1000)"""
+print("Hello World\n"*1000)
 #7
-"""a,b=map(int,input().split())
+a,b=map(int,input().split())
 if a>b:
     print("a > b")
 elif a<b:
     print("a < b")
 else:
-    print("a == b")"""
+    print("a == b")
 #8 triangle valid or not
-"""a,b,c=map(int,input().split())
+a,b,c=map(int,input().split())
 if a+b>c and a+c>b and b+c>a:
     print("Yes")
 else:
-    print("No")"""
+    print("No")
 #9 dividde the apples 2
-"""n,k = map(int,input().split())
+n,k = map(int,input().split())
 print(k%n)
 while(k>=n):
     k-=n
-print(k)"""
+print(k)
 #number reverse
-"""n = int(input())
+n = int(input())
 rev=0
 if(n<0):
     n= -n
@@ -88,10 +88,10 @@ else:
         y=n%10
         rev=rev*10+y
         n=n//10
-print(rev)"""
+print(rev)
 #watermelon
-"""w = int(input())
+w = int(input())
 if w%2==0 and w>2:
     print("YES")
 else:
-    print("NO")"""
+    print("NO")
