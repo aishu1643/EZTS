@@ -163,3 +163,74 @@ for i in s:
         else:
             cc=cc+1
 print(vc,cc)
+#P7
+#Approach - 1
+s=input()
+c=1
+r=""
+for i in range(1,len(s)):
+    if s[i]==s[i-1]:
+        c=c+1
+    else:
+        r=r+s[i-1]
+        r=r+str(c)
+        c=1
+r=r+s[len(s)-1]+str(c)
+print(r)
+#P8(Count of number of words vowels and consonants)
+#Approach - 1
+t=int(input())
+v="aeiou"
+for i in range(t):
+    s=list(input().split())
+    vc=0
+    cc=0
+    wc=len(s)
+    for j in s:
+        for k in j:
+            if k.isalpha():
+                if k in v:
+                    vc=vc+1
+                else:
+                    cc=cc+1
+print(wc,vc,cc)
+#Approach - 2
+t=int(input())
+v="aeiou"
+for i in range(t):
+    s=input()
+    vc=0
+    cc=0
+    for j in s:
+        if j.isalpha():
+            if j in v:
+                vc=vc+1
+            else:
+                cc=cc+1
+    wc=len(s.split())
+    print(wc,vc,cc)
+#P9(Guess the problem)
+#Approach - 1
+t=int(input())
+for i in range(t):
+    a,b=input().split()
+    r=" "
+    for j in b:
+        if j not in a:
+            r=r+j
+        print(r)
+#P10(Guess the problem 2)
+#Approach - 1
+t=int(input())
+for i in range(t):
+    a,b=input().split()
+    b=int(b)
+    r=""
+    for i in a:
+        k=ord(i)+b
+        if k>122:
+            k=96+(k-122)
+            r=r+chr(k)
+        else:
+            r=r+chr(k)
+print(r)
