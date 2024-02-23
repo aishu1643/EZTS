@@ -10,7 +10,6 @@ for i in range(n):
     else:
         os=os+s[i]
 print(os+es)
-
 #Approach - 2
 s=input()
 os=s[1::2]
